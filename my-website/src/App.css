@@ -1,19 +1,16 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  border: 3px solid #7E685A;
+  background-color: #C2B9B0;
 }
 
 .App-header {
-  background-color: #2d2f33;
+  background-color: #C2B9B0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding-top: 150px;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -23,32 +20,38 @@
 }
 
 .Name-Text {
-  color: gainsboro;
+  color: white;
   font-size: 56px;
-  padding-right: 70px;
+  text-align: left;
 }
 
 .container-row {
   display: flex;
-  background: #FFF;
-  background-color: #2d2f33;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 .container-column {
   display: flex;
-  background: #FFF;
-  background-color: #2d2f33;
   flex-direction: column; 
   flex-wrap: wrap;
-  align-items: center;
+  align-items: left;
+  padding-right: 100px  ;
 }
 
 .small-text {
-  color: gainsboro;
+  color: white;
   font-size: 24px;
-  padding-top: 50px;
-  max-width: 900px;
+  padding-top: 10px;
+  max-width: 700px;
+  text-align: left;
 }
 
+.footer-text {
+  color: White;
+}
+
+.head-foot-line {
+  border-color: #7E685A;
+  width: 95%;
+}
