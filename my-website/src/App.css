@@ -21,8 +21,9 @@
 
 .Name-Text {
   color: white;
-  font-size: 56px;
+  font-size: 62px;
   text-align: left;
+  font-weight: bold;
 }
 
 .container-row {
@@ -36,12 +37,13 @@
   flex-direction: column; 
   flex-wrap: wrap;
   align-items: left;
-  padding-right: 100px  ;
+  padding-right: 60px;
+  padding-top: 100px;
 }
 
 .small-text {
   color: white;
-  font-size: 24px;
+  font-size: 28px;
   padding-top: 10px;
   max-width: 700px;
   text-align: left;
@@ -54,4 +56,23 @@
 .head-foot-line {
   border-color: #7E685A;
   width: 95%;
+}
+
+.container-row-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 150px;
+}
+
+.Github-image {
+  padding-bottom: 20px;
+}
+
+.Linkedin-image:hover {
+  transform: scale(1.015);
+}
+
+.Github-image:hover {
+  transform: scale(1.015);
 }

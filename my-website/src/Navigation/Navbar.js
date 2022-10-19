@@ -2,7 +2,7 @@ import React from "react";
 import './Navbar.css'
 const Navbar = () => {
   return (
-    <div>
+    <div className="container">
         <nav className="nav-bar">
 
           <a className="navbar-brand" href="/Home">

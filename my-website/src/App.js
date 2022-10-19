@@ -1,4 +1,6 @@
 import logo from './me.jpg';
+import github_logo from './GitHub-Logo.png';
+import linkedin_logo from './linkedin-logo.png';
 import './App.css';
 import ReactRoundedImage from "react-rounded-image";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -14,7 +16,7 @@ function App() {
             <div className="container-column">
               <div className="p-2">        
                   <p className="Name-Text">
-                    Hello I'm Noah Behm    
+                    Hello, I'm Noah Behm    
                   </p>
               </div>
               <div className="p-2">
@@ -29,15 +31,32 @@ function App() {
 
 
             <div className="p-2">   
-                <ReactRoundedImage image={logo} roundedSize="0" imageWidth="350" imageHeight="350" roundedColor="#dddcf194"/>
+                <ReactRoundedImage image={logo} roundedSize="0" imageWidth="400" imageHeight="400" roundedColor="#dddcf194"/>
             </div>
           </div>
 
+          <div className="container-row-2">
+            <div className="p-2">
+              <a href="https://github.com/Noah-Behm" target="_blank" rel="noopener noreferrer">
+                <img className='Github-image' src={github_logo} alt="Github logo" height={130} width={200}></img>
+              </a>
+            </div>
+            <div className="p-2">
+            <a href="https://www.linkedin.com/in/noah-behm-395b8522b/" target="_blank" rel="noopener noreferrer">
+              <img className='Linkedin-image' src={linkedin_logo} alt="Linkedin logo" height={110} width={130}></img>
+            </a>
+            </div>
+          </div>
       </header>
+
+
+
+
+
       <hr className='head-foot-line'></hr>
       <footer className='contact-info'>
         <p className='footer-text'>
-          Contact me!
+          contact me
         </p>
         <p className='footer-text'>
           behmnoah@gmail.com/behmnoah@msu.edu 
@@ -47,6 +66,10 @@ function App() {
 
     </div>
     
+
+
+
+
   );
 }
 

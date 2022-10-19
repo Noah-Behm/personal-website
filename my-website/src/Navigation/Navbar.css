@@ -1,7 +1,6 @@
 .nav-bar {
     display: flex;
     flex-direction: row;
-    background-color: #c5b6a8;
     padding-left: 50px;
     padding-top: 20px;
   }
@@ -9,13 +8,13 @@
   .navbar-brand {
     color: white;
     font-size: 32px;
+    padding-right: 45px;
   }
 
   .navbar-brand:hover {
     color: #E7717D;
     transform: scale(1.015);
+    text-decoration: underline;
   }
 
-  .container {
-    background-color: #c7c4f094;
-  }
+
