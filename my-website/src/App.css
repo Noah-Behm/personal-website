@@ -25,14 +25,14 @@
 .Name-Text {
   color: gainsboro;
   font-size: 56px;
-  padding-right: 50px;
+  padding-right: 70px;
 }
 
 .container-row {
   display: flex;
   background: #FFF;
   background-color: #2d2f33;
-  flex-direction: row; /* change this to row instead of 'column' */
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -40,14 +40,15 @@
   display: flex;
   background: #FFF;
   background-color: #2d2f33;
-  flex-direction: column; /* change this to row instead of 'column' */
+  flex-direction: column; 
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .small-text {
   color: gainsboro;
-  font-size: 12px;
+  font-size: 24px;
   padding-top: 50px;
-  overflow-wrap: break-word;
+  max-width: 900px;
 }
 

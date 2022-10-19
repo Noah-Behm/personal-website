@@ -1,10 +1,13 @@
 import logo from './me.jpg';
 import './App.css';
 import ReactRoundedImage from "react-rounded-image";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./Navigation/Navbar.js";
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <header className="App-header">
 
 
@@ -26,8 +29,7 @@ function App() {
           <div>
               <div className="p-2">        
                 <p className='small-text'>
-                  I'm a computer science student at Michigan State University, graduating in 2022. I'm looking for employment as a software engineer. Please look
-                  around my page to get to know me better!   
+                  I'm a computer science student at Michigan State University, graduating in 2022. This is a placeholder text which will be filled in later with something better. 
                 </p>
               </div>
           </div>
