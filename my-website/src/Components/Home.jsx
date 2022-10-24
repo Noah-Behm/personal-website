@@ -2,12 +2,29 @@ import React from "react";
 import logo from '../images/me.jpg';
 import github_logo from '../images/GitHub-Logo.png';
 import linkedin_logo from '../images/linkedin-logo.png';
+import resume_logo from '../images/resume.png';
 import './Home.css';
 import ReactRoundedImage from "react-rounded-image";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "../Navigation/Navbar.jsx";
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 const Home = () => {
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch('../images/resume.pdf').then(response => {
+        response.blob().then(blob => {
+            // Creating new object of PDF file
+            const fileURL = window.URL.createObjectURL(blob);
+            // Setting various property values
+            let alink = document.createElement('a');
+            alink.href = fileURL;
+            alink.download = 'noahbehm_resume.pdf';
+            alink.click();
+        })
+    })
+  }
   return (
     <div className="App">
     <header className='nav-head'>
@@ -47,6 +64,16 @@ const Home = () => {
             <img className='Linkedin-image' src={linkedin_logo} alt="Linkedin logo" height={110} width={130}></img>
           </a>
           </div>
+          <div className="p-2">
+            
+            <Popup trigger={
+                <button onClick={onButtonClick} className="resume-button">
+                  <img className='resume-image' src={resume_logo} alt="Resume logo" height={110} width={130} onClick={onButtonClick}></img>
+                </button>
+              } position="right center">
+              <div>Thank you for downloading my resume!</div>
+            </Popup>
+          </div>
         </div>
     </body>
 
@@ -59,8 +86,6 @@ const Home = () => {
         behmnoah@gmail.com/behmnoah@msu.edu 
       </p>
     </footer>
-
-
   </div>
   );
 };
