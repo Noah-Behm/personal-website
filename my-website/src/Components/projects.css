@@ -1,0 +1,25 @@
+.About {
+    display: flex;
+    text-align: center;
+    border: 3px solid #838689;
+    background-color: #a8caba;
+    justify-content: left;
+  }
+
+.parent {
+    text-align: center;
+    border: 3px solid #838689;
+    background-color: #a8caba;
+    justify-content: left;
+  }
+
+.contain {
+    background-color: #a8caba;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }

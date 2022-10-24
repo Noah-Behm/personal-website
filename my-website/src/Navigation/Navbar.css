@@ -1,20 +1,26 @@
 .nav-bar {
     display: flex;
     flex-direction: row;
-    padding-left: 50px;
     padding-top: 20px;
+    padding-left: 10px;
   }
 
   .navbar-brand {
     color: white;
     font-size: 32px;
     padding-right: 45px;
+    font-weight: 600;
   }
 
   .navbar-brand:hover {
-    color: #E7717D;
+    color: #838689;
     transform: scale(1.015);
     text-decoration: underline;
+  }
+
+  .container {
+    display: flex;
+    flex-grow: 10;
   }
 
 

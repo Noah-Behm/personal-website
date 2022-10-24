@@ -1,0 +1,105 @@
+.App {
+  text-align: center;
+  border: 3px solid #838689;
+  background-color: #a8caba;
+  justify-content: left;
+}
+
+.nav-bar {
+  justify-content: left;
+}
+
+.nav-head {
+  display: flex;
+  flex: 10;
+}
+
+.App-header {
+  background-color: #a8caba;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Name-Text {
+  color: white;
+  font-size: 62px;
+  text-align: left;
+  font-weight: bold;
+  font-weight: 600;
+}
+
+.container-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container-column {
+  display: flex;
+  flex-direction: column; 
+  flex-wrap: wrap;
+  align-items: left;
+  padding-right: 60px;
+  padding-top: 100px;
+}
+
+.small-text {
+  color: white;
+  font-size: 28px;
+  padding-top: 10px;
+  max-width: 700px;
+  text-align: left;
+  font-weight: 300;
+}
+
+.footer-text {
+  color: White;
+}
+
+.head-foot-line {
+  border-color: #838689;
+  width: 95%;
+}
+
+.container-row-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 150px;
+}
+
+.Github-image {
+  padding-bottom: 20px;
+}
+
+.Linkedin-image:hover {
+  transform: scale(1.015);
+}
+
+.Github-image:hover {
+  transform: scale(1.015);
+}
+
+@media (max-width: 1198px) {
+  .container-row {
+    justify-content: center;
+  }
+  .container-column {
+    justify-content: center;
+  }
+  .p-2 {
+    justify-content: center;
+  }
+  .App-header {
+    padding-top: 10px;
+  }
+}
